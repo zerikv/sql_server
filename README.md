@@ -15,6 +15,7 @@ Provides resources for the installation and configuration of Microsoft SQL Serve
 - Microsoft SQL Server 2012
 - Microsoft SQL Server 2016
 - Microsoft SQL Server 2017
+- Microsoft SQL Server 2019
 
 ### Supported Client Versions
 
@@ -87,7 +88,7 @@ Provides resources for the installation and configuration of Microsoft SQL Serve
              - `IS_WORKER` - Scale Out Worker
 
 
-- `version` - Version of SQL to be installed. Valid otpions are `2012`, `2016`, or `2017`. Default is `2012`
+- `version` - Version of SQL to be installed. Valid otpions are `2012`, `2016`, 2017 , or `2019`. Default is `2012`
 - `source_url` - Source of the SQL setup.exe install file. Default is built from the helper libraries.
 - `package_name` - Package name for the SQL install. If you specify a version this property is not necessary. Default is built from the helper libraries.
 - `package_checksum` - Package checksum in SHA256 format for the setup.exe file. Default is built from the helper libraries.
@@ -182,7 +183,7 @@ end
 
 #### Properties
 
-- `version` - SQL Version of the instance to be configured. Valid otpions are `2012`, `2016`, or `2017`. Default is `2012`
+- `version` - SQL Version of the instance to be configured. Valid otpions are `2012`, `2016`, 2017 , or `2019`. Default is `2012`
 - `tcp_enabled` - If TCP is enabled for the instance. Default is true
 - `sql_port` - Port SQL will listen on. Default is 1433
 - `tcp_dynamic_ports` - Sets the Dynamic port SQL will listen on. Default is an empty string
